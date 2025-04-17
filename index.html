@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Hut Landing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🍕 PizzaHut</div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#deals">Deals</a>
+      <a href="#locations">Locations</a>
+      <a href="#contact">Contact</a>
+      <button class="cta">Order Now</button>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script> 
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Hot, Fresh & Delivered Fast!</h1>
+        <p>Your favorite pizza, just a click away.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn primary">🍕 Order Now</a>
+          <a href="#locations" class="btn secondary">📍 Find a Store</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="featured-section" id="deals">
+    <div class="container">
+      <h2 class="section-title">🔥 Featured Deals</h2>
+      <div class="cards-wrapper">
+        <!-- Card 1 -->
+        <div class="deal-card">
+          <img src="https://cdn.pixabay.com/photo/2021/12/30/11/33/italian-cuisine-6903774_1280.jpg" alt="Pepperoni Pizza">
+          <h3>Classic Pepperoni</h3>
+          <p>Loaded with premium pepperoni and extra cheese.</p>
+          <span class="price">$9.99</span>
+          <a href="#" class="btn primary">Order Now</a>
+        </div>
+        <!-- Card 2 -->
+        <div class="deal-card">
+          <img src="https://cdn.pixabay.com/photo/2021/12/30/11/33/italian-cuisine-6903773_1280.jpg" alt="Veggie Supreme">
+          <h3>Veggie Supreme</h3>
+          <p>Fresh veggies on a crispy crust with tangy sauce.</p>
+          <span class="price">$8.49</span>
+          <a href="#" class="btn primary">Order Now</a>
+        </div>
+        <!-- Card 3 -->
+        <div class="deal-card">
+          <img src="https://cdn.pixabay.com/photo/2018/12/12/13/04/pizza-3870780_1280.jpg" alt="Meat Lover's">
+          <h3>Meat Lover’s</h3>
+          <p>Beef, sausage, ham & bacon on a cheesy base.</p>
+          <span class="price">$11.49</span>
+          <a href="#" class="btn primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="menu-preview" id="menu">
+    <div class="container">
+      <h2 class="section-title">🍕 Popular Pizzas</h2>
+      <div class="menu-grid">
+        <!-- Pizza Item 1 -->
+        <div class="menu-card">
+          <img src="https://cdn.pixabay.com/photo/2020/06/17/21/46/pizza-5311269_1280.jpg" alt="Margherita">
+          <h3>Margherita</h3>
+          <p>Fresh tomatoes, mozzarella & basil.</p>
+          <span class="label">🍃 220 cal / slice</span>
+          <a href="#" class="btn secondary">Customize</a>
+        </div>
+        <!-- Pizza Item 2 -->
+        <div class="menu-card">
+          <img src="https://cdn.pixabay.com/photo/2023/03/20/04/09/pizza-7863713_1280.jpg" alt="BBQ Chicken">
+          <h3>BBQ Chicken</h3>
+          <p>Grilled chicken, BBQ sauce, onions & cheese.</p>
+          <span class="label">🔥 280 cal / slice</span>
+          <a href="#" class="btn secondary">Customize</a>
+        </div>
+        <!-- Pizza Item 3 -->
+        <div class="menu-card">
+          <img src="https://cdn.pixabay.com/photo/2022/08/17/08/42/pizza-7391923_1280.jpg" alt="Hawaiian">
+          <h3>Hawaiian</h3>
+          <p>Ham, pineapple, cheese & tomato sauce.</p>
+          <span class="label">🌴 250 cal / slice</span>
+          <a href="#" class="btn secondary">Customize</a>
+        </div>
+        <!-- Pizza Item 4 -->
+        <div class="menu-card">
+          <img src="https://cdn.pixabay.com/photo/2021/12/30/11/31/italian-cuisine-6903772_1280.jpg" alt="Cheese Burst">
+          <h3>Cheese Burst</h3>
+          <p>Extra cheese lovers’ dream pizza.</p>
+          <span class="label">🧀 300 cal / slice</span>
+          <a href="#" class="btn secondary">Customize</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="limited-offers">
+    <div class="container">
+      <h2 class="section-title">⏳ Limited-Time Offers</h2>
+      <div class="offers-grid">
+        <!-- Offer 1 -->
+        <div class="offer-card">
+          <img src="https://cdn.pixabay.com/photo/2020/08/19/14/43/pizza-5501067_1280.jpg" alt="Family Feast">
+          <div class="offer-content">
+            <h3>Family Feast Combo</h3>
+            <p>2 Large Pizzas + Breadsticks + 2L Drink</p>
+            <span class="discount">Save 25%</span>
+            <a href="#" class="btn primary">Get This Deal</a>
+          </div>
+        </div>
+        <!-- Offer 2 -->
+        <div class="offer-card">
+          <img src="https://cdn.pixabay.com/photo/2022/07/01/12/47/pizza-7295562_1280.jpg" alt="Midweek Madness">
+          <div class="offer-content">
+            <h3>Midweek Madness</h3>
+            <p>Buy 1 Get 1 Free – Wednesdays Only!</p>
+            <span class="discount">BOGO Alert 🚨</span>
+            <a href="#" class="btn primary">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="location-delivery" id="locations">
+    <div class="container">
+      <h2 class="section-title">📍 Find a Store Near You</h2>
+      <p class="section-subtext">Enter your location to check delivery and pickup options.</p>
+      <div class="location-form">
+        <input type="text" placeholder="Enter your city or ZIP code..." />
+        <button class="btn primary">Search</button>
+      </div>
+      <div class="map-delivery">
+        <div class="map-placeholder">
+          <!-- Replace with actual map embed if needed -->
+          <p>map-preview</p>
+        </div>
+        <div class="delivery-options">
+          <div class="option">
+            <span class="icon">🚗</span>
+            <h4>Fast Delivery</h4>
+            <p>We deliver hot and fresh in under 30 minutes.</p>
+          </div>
+          <div class="option">
+            <span class="icon">🛍️</span>
+            <h4>Store Pickup</h4>
+            <p>Order ahead and grab it on the go.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="reviews">
+    <div class="container">
+      <h2 class="section-title">⭐ What Our Customers Say</h2>
+      <p class="section-subtext">Real feedback from pizza lovers like you.</p>
+      <div class="review-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Reviewer 1">
+            <div>
+              <h4>Sarah L.</h4>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p>"Absolutely love their pepperoni pizza! Super fast delivery and always hot."</p>
+        </div>
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Reviewer 2">
+            <div>
+              <h4>Jason K.</h4>
+              <div class="stars">⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p>"Great crust, generous toppings. Couldn’t ask for better quality!"</p>
+        </div>
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="review-header">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Reviewer 3">
+            <div>
+              <h4>Ana M.</h4>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p>"The best pizza experience in town! I always come back for more."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">📬 Contact Us</h2>
+      <p class="section-subtext">Got a question, suggestion, or feedback? We'd love to hear from you!</p>
+      <div class="contact-content">
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+        <!-- Optional Contact Info -->
+        <div class="contact-info">
+          <h4>📞 Reach Us</h4>
+          <p><strong>Email:</strong> support@pizzahut.com</p>
+          <p><strong>Phone:</strong> +1 800 123 4567</p>
+          <p><strong>Hours:</strong> Mon-Sun, 10AM – 11PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <h3>🍕 Pizza Hut</h3>
+        <p>Serving hot & fresh pizzas since 1958.</p>
+      </div>
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#deals">Offers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Contact + Social -->
+      <div class="footer-contact">
+        <h4>Connect</h4>
+        <p>Email: support@pizzahut.com</p>
+        <p>Phone: +1 800 123 4567</p>
+        <div class="social-icons">
+          <a href="#" title="Facebook">📘</a>
+          <a href="#" title="Instagram">📸</a>
+          <a href="#" title="Twitter">🐦</a>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>©️ 2025 Pizza Hut. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
